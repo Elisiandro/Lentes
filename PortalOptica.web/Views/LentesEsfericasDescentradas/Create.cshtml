@@ -1,0 +1,136 @@
+﻿@model PortalOptica.web.Models.LenteEsfericaDescentrada
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+@*<h1>Create</h1>*@
+
+<h4>Lente Esferica Descentrada</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Calculo">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Rx" class="control-label"></label>
+                <input asp-for="Rx" class="form-control" />
+                <span asp-validation-for="Rx" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dnp" class="control-label"></label>
+                <input asp-for="Dnp" class="form-control" />
+                <span asp-validation-for="Dnp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Diametro" class="control-label"></label>
+                <input asp-for="Diametro" class="form-control" />
+                <span asp-validation-for="Diametro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TamanhoArmacao" class="control-label"></label>
+                <input asp-for="TamanhoArmacao" class="form-control" />
+                <span asp-validation-for="TamanhoArmacao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IndiceRefracao" class="control-label"></label>
+                <input asp-for="IndiceRefracao" class="form-control" />
+                <span asp-validation-for="IndiceRefracao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurvaBase" class="control-label"></label>
+                <input asp-for="CurvaBase" class="form-control" />
+                <span asp-validation-for="CurvaBase" class="text-danger"></span>
+            </div>
+                       
+            <div class="form-group">
+                <input type="submit" value="Calcular" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+
+    <div class="col-md-4">
+        <dl class="row">
+
+            @*<dt class="col-md-8">
+            Valores do X
+        </dt>
+        <dd class="col-md-8">
+            @ViewBag._x1
+            <br>
+            @ViewBag._x2
+            <br>
+            @ViewBag._x3
+        </dd>*@
+
+            <dt class="col-md-8">
+                (FC) Fator de Conversao:
+            </dt>
+            <dd class="col-md-8">
+                @ViewBag.FatorConversao
+            </dd>
+            <dt class="col-md-8">
+                (ND) Nova dioptria:
+            </dt>
+            <dd class="col-md-8">
+                @ViewBag.NovaDiopdria
+            </dd>
+            <dt class="col-md-8">
+                (CO) Curva Oposta:
+            </dt>
+            <dd class="col-md-8">
+                @ViewBag.CurvaOposta
+            </dd>
+            <dt class="col-md-8">
+                (E) Ezão:
+            </dt>
+            <dd class="col-md-8">
+                @ViewBag.Ezao
+            </dd>
+            <dt class="col-md-8">
+                (DS) Descentração:
+            </dt>
+            <dd class="col-md-8">
+                @ViewBag.Descentracao
+            </dd>
+            <dt class="col-md-8">
+                (DB) Diferença de Borda:
+            </dt>
+            <dd class="col-md-8">
+                @ViewBag.DiferencaBorda
+            </dd>
+            <dt class="col-md-8">
+                (ET) Espessura Total:
+            </dt>
+            <dd class="col-md-8">
+                @ViewBag.EspessuraTotal
+            </dd>
+
+            <dt class="col-md-8">
+                (EO) Espessura Oposta:
+            </dt>
+            <dd class="col-md-8">
+                @ViewBag.EspessuraOposta
+            </dd>
+            <dt class="col-md-8">
+                (e) Espessura mínima:
+            </dt>
+            <dd class="col-md-8">
+                @ViewBag.EspessuraMinima
+            </dd>
+
+            @*<dt class="col-md-8">
+            Calculo correto:
+        </dt>
+        <dd class="col-md-8">
+            @ViewBag.ProvaReal
+        </dd>*@
+
+        </dl>
+    </div>
+</div>
+
+@*<div>
+    <a asp-action="Index">Back to List</a>
+</div>*@
+

@@ -1,0 +1,54 @@
+﻿@model PortalOptica.web.Models.LenteEsfericaDescentrada
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<div>
+    <h4>LenteEsfericaDescentrada</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Rx)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Rx)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Dnp)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Dnp)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Diametro)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Diametro)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TamanhoArmacao)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TamanhoArmacao)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IndiceRefracao)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IndiceRefracao)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CurvaBase)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CurvaBase)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
