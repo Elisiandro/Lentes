@@ -9,5 +9,16 @@ namespace Biblioteca.Lentes
         public decimal Dioptria { get; set; }
         public decimal Cilindro { get; set; }
         public int Eixo { get; set; }
+
+
+        public override string ToString()
+        {
+            string retorno = Dioptria > 0 ? $"+{Dioptria}" : $"{Dioptria}";
+            retorno += Cilindro > 0 ? $" +{Cilindro}" : $" {Cilindro}";
+            retorno += $"x {Eixo}º";
+            return retorno;
+        }
     }
+
+
 }

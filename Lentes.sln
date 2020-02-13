@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lentes", "Lentes\Lentes.csproj", "{FFE165D0-4062-4767-B172-5641E39E275C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lentes", "Lentes\Lentes.csproj", "{FFE165D0-4062-4767-B172-5641E39E275C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Biblioteca", "Biblioteca\Biblioteca.csproj", "{B0445386-F1A8-44FB-9891-B61C9634CB1A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PortalOptica.web", "PortalOptica.web\PortalOptica.web.csproj", "{765758CD-F690-4766-ADBF-1EB2D58E918A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{FFE165D0-4062-4767-B172-5641E39E275C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFE165D0-4062-4767-B172-5641E39E275C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFE165D0-4062-4767-B172-5641E39E275C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0445386-F1A8-44FB-9891-B61C9634CB1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0445386-F1A8-44FB-9891-B61C9634CB1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0445386-F1A8-44FB-9891-B61C9634CB1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0445386-F1A8-44FB-9891-B61C9634CB1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{765758CD-F690-4766-ADBF-1EB2D58E918A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{765758CD-F690-4766-ADBF-1EB2D58E918A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{765758CD-F690-4766-ADBF-1EB2D58E918A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{765758CD-F690-4766-ADBF-1EB2D58E918A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
